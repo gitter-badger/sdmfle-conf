@@ -1,0 +1,23 @@
+#cloud-config
+
+hostname: sdmfle-n2.sdmfle.io
+ssh-authorized-keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+23n/uBDWSurf7l0v3E23MlahQkSPuv5gb67ilFBkvxChgS6m3NchJcM0xiDF5zUVrRuB2X6zoC2u9a6Sh4dNeQ9oj7oXCtUTgL2gtDrdSbafVhv66qoIlhJqeH8zhEbeIl+Fjfs9oEU/+GTMJaIfK9B2fQKI/RMk14/YSyuJS/+jeXzbIJ5GQIeQvXSw1tytwSJzxqEV8ZoGWrP6CgyJSU+WckK1lQJXouVCJo8ZGJbomzN+cXCRh1ZRB0dytyuodOvfbmVsRnQYWCHwnRpckcd2Z/u6HI+gHT/PeDW3ZJVLOuRw4MEXu04ZaSMZrRhlTOQKJPO5T3tWu7YfuCSX jdaniel@ch-prd095
+coreos:
+  units:
+    - name: 00-ens192.network
+      runtime: true
+      content: |
+        [Match]
+        Name=ens192
+
+        [Network]
+        DNS=8.8.8.8
+        Address=10.5.5.14/24
+        Gateway=10.5.5.254
+write_files:
+  - path: "/etc/motd"
+    permissions: "0644"
+    owner: "root"
+    content: |
+      ### INFO: THIS IS A PRIVATE ELECTRONIC SYSTEM. ACTIVITY MAY BE MONITORED ###
