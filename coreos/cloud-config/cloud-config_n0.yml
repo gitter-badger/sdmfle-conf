@@ -15,6 +15,14 @@ coreos:
         DNS=8.8.8.8
         Address=10.5.5.12/24
         Gateway=10.5.5.254
+    - name: loopback-interface.service
+      command: start
+      content: |
+        [Service]
+        Type=oneshot
+        ExecStart=/usr/bin/ip link set lo down
+        ExecStart=/usr/bin/ip addr flush dev lo
+        ExecStart=/usr/bin/ip link set lo up
 write_files:
   - path: "/etc/motd"
     permissions: "0644"
