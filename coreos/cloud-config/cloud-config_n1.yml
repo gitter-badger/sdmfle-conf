@@ -23,6 +23,11 @@ coreos:
         ExecStart=/usr/bin/ip link set lo down
         ExecStart=/usr/bin/ip addr flush dev lo
         ExecStart=/usr/bin/ip link set lo up
+  etcd2:
+    discovery: "https://discovery.etcd.io/<token>"
+    initial-advertise-peer-urls: "http://10.5.5.13:2380"
+    listen-client-urls: "http://0.0.0.0:2379,http://0.0.0.0:4001"
+    listen-peer-urls: "http://10.5.5.12:2380,http://10.5.5.12:7001,http://10.5.5.14:2380,http://10.5.5.14:7001,http://10.5.5.15:2380,http://10.5.5.15:7001"
 write_files:
   - path: "/etc/motd"
     permissions: "0644"
