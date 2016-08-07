@@ -26,10 +26,11 @@ coreos:
     - name: etcd2.service
       command: start
   etcd2:
-    advertise-client-urls: "http://10.5.5.14:2379"
-    initial-advertise-peer-urls: "http://10.5.5.14:2380"
-    listen-client-urls: "http://0.0.0.0:2379,http://0.0.0.0:4001"
-    listen-peer-urls: "http://0.0.0.0:2380,http://0.0.0.0:7001"
+    discovery: https://discovery.etcd.io/e2c6dcfa68cb739bd73d6d841c093277
+    advertise-client-urls: http://10.5.5.14:2379,http://10.5.5.14:4001
+    initial-advertise-peer-urls: http://10.5.5.14:2380
+    listen-client-urls: http://0.0.0.0:2379,http://0.0.0.0:4001
+    listen-peer-urls: http://10.5.5.14:2380
 write_files:
   - path: "/etc/motd"
     permissions: "0644"
