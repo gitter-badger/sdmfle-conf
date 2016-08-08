@@ -26,6 +26,7 @@ coreos:
     - name: etcd2.service
       command: start
   etcd2:
+    name: sdmfle-n1-s0.sdmfle.io
     discovery: https://discovery.etcd.io/e2c6dcfa68cb739bd73d6d841c093277
     advertise-client-urls: http://10.5.5.13:2379,http://10.5.5.13:4001
     initial-advertise-peer-urls: http://10.5.5.13:2380
