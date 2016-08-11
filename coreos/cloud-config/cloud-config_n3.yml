@@ -30,7 +30,9 @@ coreos:
         - name: 50-network-config.conf
           content: |
             [Service]
-            ExecStartPre=/usr/bin/etcdctl set /coreos.com/network/config '{ "Network": "10.10.1.0/16" }'
+            ExecStartPre=/usr/bin/etcdctl set /coreos.com/network/config '{ "Network": "10.15.0.0/16" }'
+      command: start
+    - name: docker.service
       command: start
   etcd2:
     name: sdmfle-n3-s0.sdmfle.io
