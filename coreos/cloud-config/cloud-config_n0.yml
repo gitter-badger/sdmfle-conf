@@ -46,7 +46,11 @@ write_files:
     permissions: "0644"
     owner: "root"
     content: |
-      ### INFO: THIS IS A PRIVATE ELECTRONIC SYSTEM. ACTIVITY MAY BE MONITORED ###
+      **************************************************************************
+                                  NOTICE TO USERS
+        This is a DePaul University affiliated server. Authorized users only!
+              All actions may be intercepted, monitored, and inspected.
+      **************************************************************************
   - path: "/etc/profile.d/ps1.sh"
     permissions: "0777"
     owner: "root"
