@@ -1,4 +1,6 @@
 # sdmfle-conf
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/securitydaemons/sdmfle-conf.svg)](http://isitmaintained.com/project/securitydaemons/sdmfle-conf "Average time to resolve an issue")
+
 This repository contains infrastructure configuration files developed for the Security Daemons Multi-Faceted Laboratory Environment.
 
 ## Project Overview
