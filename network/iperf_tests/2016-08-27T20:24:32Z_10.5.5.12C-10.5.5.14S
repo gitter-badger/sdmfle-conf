@@ -1,0 +1,12 @@
+[10616:10614 - 0:119] 2016-08-27T20:24:32UTC [root@sdmfle-n0.sdmfle.io:o +1] ~
+$ iperf -em -c 10.5.5.14
+------------------------------------------------------------
+Client connecting to 10.5.5.14, TCP port 5001
+TCP window size: 45.0 KByte (default)
+------------------------------------------------------------
+[  3] local 10.5.5.12 port 53644 connected with 10.5.5.14 port 5001
+[ ID] Interval        Transfer    Bandwidth       Write/Err  Rtry    Cwnd
+[  3] 0.00-10.00 sec  5.63 GBytes  4.83 Gbits/sec  1/0        43   1083K
+[  3] MSS size 1448 bytes (MTU 1500 bytes, ethernet)
+
+[10616:10614 - 0:120] 2016-08-27T20:25:01UTC [root@sdmfle-n0.sdmfle.io:o +1] ~
