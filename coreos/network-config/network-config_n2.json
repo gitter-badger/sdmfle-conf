@@ -1,0 +1,9 @@
+{
+	"Network": "10.15.0.0/16",
+	"Backend": {
+		"Type": "vxlan",
+		"VNI": 1,
+		"Port": 8472,
+		"GBP": False
+	}
+}
