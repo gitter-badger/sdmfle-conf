@@ -1,4 +1,6 @@
 # sdmfle-conf
+
+[![Join the chat at https://gitter.im/securitydaemons/sdmfle-conf](https://badges.gitter.im/securitydaemons/sdmfle-conf.svg)](https://gitter.im/securitydaemons/sdmfle-conf?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/securitydaemons/sdmfle-conf.svg)](http://isitmaintained.com/project/securitydaemons/sdmfle-conf "Average time to resolve an issue")
 
 This repository contains infrastructure configuration files developed for the Security Daemons Multi-Faceted Laboratory Environment.
